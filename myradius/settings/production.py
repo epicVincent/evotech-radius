@@ -25,8 +25,14 @@ SECRET_KEY = '3vq@ea82v@b49g@+(chv!lsl=b$&8w34%p*k3d=gy*-vtra+8)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-OPENWISP_RADIUS_FREERADIUS_ALLOWED_HOSTS = ['127.0.0.1','Localhost',]
-ALLOWED_HOSTS = ['127.0.0.1','Localhost',]
+OPENWISP_RADIUS_FREERADIUS_ALLOWED_HOSTS = ['127.0.0.1',
+                                            'Localhost',
+                                            'myradius.herokuapp.com'
+                                            ]
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'Localhost',
+                 'myradius.herokuapp.com',
+                 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 PRIVATE_STORAGE_ROOT = os.path.join(MEDIA_ROOT, 'private')
 

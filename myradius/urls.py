@@ -20,5 +20,6 @@ from openwisp_radius.urls import get_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('openwisp_users.accounts.urls')),
-    path('', include('openwisp_radius.urls', namespace='radius'))
+    path('', include('openwisp_radius.urls', namespace='radius')),
+    path('',admin.site.urls),
 ]
